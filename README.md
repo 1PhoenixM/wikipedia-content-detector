@@ -2,6 +2,8 @@
 
 This is the front-end to my NLP Wikipedia Promotional Content Detector project.
 
+[Live code](http://wikipedia-content-detector.herokuapp.com/)
+
 ## Running Locally
 
 ```sh
