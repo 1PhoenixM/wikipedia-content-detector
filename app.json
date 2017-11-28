@@ -1,0 +1,16 @@
+{
+  "name": "Wikipedia Promotional Content Detector",
+  "description": "A classifier for promotional content articles on Wikipedia.",
+  "image": "heroku/python",
+  "repository": "https://github.com/m-iori/wikipedia-promotional-content",
+  "keywords": ["python", "django" ],
+  "addons": [ "heroku-postgresql" ],
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python promo_classifier.py collectstatic --noinput",
+        "test": "python promo_classifier.py test"
+      }
+    }
+  }
+}
