@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<h1>Wikipedia Promotional Content Detector</h1>
+<br />
+<a href="mailto:Melissa.Iori@tufts.edu">Melissa Iori</a>
+<br />
+<br />
+"Promotional content" is sometimes found in Wikipedia articles. This is biased content that may not belong in an encyclopedia article.
+<br />
+Rather than have human editors manually comb through thousands of articles, a better way would be to use machine learning to discover promotional tone in articles. 
+<br />
+Enter the URL of a Wikipedia article below to check for promotional content.
+<br />
+(This content detector is not 100% accurate. Always use your best judgement when reading anything on Wikipedia!)
+<br />
+<br />
+
+<form method="POST" action="/classify">
+{% csrf_token %}
+<div class="input-group">
+   <input name="article" type="text" class="form-control">
+   <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">Check</button>
+   </span>
+</div>
+</form>
+
+<hr />
+
+{% autoescape off %}
+{{ result }}
+<br />
+<br />
+{{ ngrams }}
+<br />
+<br />
+{{ articletext }}
+{% endautoescape %}
+
+{% endblock %}
