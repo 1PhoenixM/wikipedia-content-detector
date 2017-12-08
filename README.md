@@ -101,4 +101,4 @@ Quadgram was not computed for maxent because the featureset contained many quadg
 | maxent		  | Bigram (2) | 100						  |	56%		 |
 | maxent		  | Trigram (3) | 20						  |	65%		 |
 | maxent		  | Trigram (3) | 50						  |	56%		 |
-| maxent		  | Trigram (3) | 100						  |	**77%**	 |
+| maxent		  | Trigram (3) | 100						  |	***77%***	 |
