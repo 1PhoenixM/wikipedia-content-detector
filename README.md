@@ -6,10 +6,6 @@ Read Pitch.pdf for more information.
 
 Most extensive code is found in trainer.py and project/views.py.
 
-[Live demo on Heroku](https://wikipedia-content-detector.herokuapp.com/)
-
-Load time on this demo may be a little slow because it's on Heroku free tier.
-
 Some examples that work not from training or testing sets:
 
 Good:
